@@ -13,6 +13,13 @@ Gumby.ready(function() {
 		$(this).trigger('gumby.trigger');
 	});
 
+  $('#hero').fullHeight();
+  $(window).resize(function() {
+    $('#hero').fullHeight();
+  });
+
+  $('.display').addClass('ready');
+
 // Oldie document loaded
 }).oldie(function() {
 	Gumby.warn("This is an oldie browser...");

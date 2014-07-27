@@ -1,1 +1,60 @@
-// Your custom SCSS should be written here...
+.display {
+  visibility: hidden;
+}
+
+.display.ready {
+  visibility: visible;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-headers;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+$hero-font-color: white;
+
+.pane {
+  width: 100%;
+  min-height: 500px;
+}
+#hero {
+
+  background: url(../img/books-large.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  color: $hero-font-color;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $hero-font-color;
+    font-family: $font-family-headers;
+  }
+
+  h1 {
+    font-size: em(42px);
+    text-transform: none;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: em(62px);
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .profile-image {
+    margin-bottom: $med;
+  }
+
+  p {
+    margin-top: $med;
+  }
+
+  .contents {
+    padding-top: 5em;
+  }
+
+}
+.circle {
+  border-radius: 100%;
+  border: 3px solid white;
+}
