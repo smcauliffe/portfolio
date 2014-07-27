@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "authors": [
+    "seanmcauliffe <smcauliffe2@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://seanmcauliffe.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gumby": "git://github.com/GumbyFramework/Gumby.git#~2.6.3"
+  }
+}
