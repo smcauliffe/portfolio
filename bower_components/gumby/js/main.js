@@ -1,3 +1,5 @@
+Gumby.init();
+
 // Gumby is ready to go
 Gumby.ready(function() {
 	Gumby.log('Gumby is ready to go...', Gumby.dump());
@@ -14,8 +16,11 @@ Gumby.ready(function() {
 	});
 
   $('#hero').fullHeight();
+  Gumby.initialize('fixed', true);
+
   $(window).resize(function() {
     $('#hero').fullHeight();
+    Gumby.initialize('fixed', true);
   });
 
   $('.display').addClass('ready');

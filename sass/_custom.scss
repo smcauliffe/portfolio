@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .pane {
   width: 100%;
-  min-height: 500px;
+  min-height: 300px;
 }
 
 .circle {
@@ -24,6 +24,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .icon-link-block {
   display: block;
+}
+
+.valign-img-bottom {
+  vertical-align: bottom;
+}
+
+p {
+  margin-top: $large;
+}
+
+h3 {
+  margin-top: $med;
 }
 
 /* Hero Unit */
@@ -36,7 +48,6 @@ $hero-font-color: white;
   background-size: cover;
   color: $hero-font-color;
   position: relative;
-  margin-bottom: 50px;
 
   h1, h2, h3, h4, h5, h6 {
     color: $hero-font-color;

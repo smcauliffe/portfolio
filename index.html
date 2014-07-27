@@ -68,17 +68,50 @@ Morbi est metus, tempor sed enim id, pretium faucibus felis. Suspendisse vitae c
     </div>
   </div>
 
+  <nav id="navbar_main" class="navbar" gumby-fixed="top">
+    <div class="row">
+      <a href="#" class="toggle" gumby-trigger="#navbar_main > div > ul"><i class="icon-menu"></i></a>
+      <h4 class="four columns">Sean McAuliffe</h4>
+      <ul class="eight columns text-right">
+        <li><a href="#">Work</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="pane">
     <section class="row">
       <div class="six columns">
-        <img src="img/tac-in-monitor.png">
+        <img class="valign-img-bottom" src="img/tac-in-monitor.png">
       </div>
-      <div class="six columns">
-        <h3>Boeing</h3>
+      <div class="push_one five columns">
+        <h3>Boeing Web Apps</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Morbi est metus, tempor sed enim id, pretium faucibus felis. Suspendisse vitae consequat velit. Fusce nec orci lobortis, pellentesque ipsum ac, porta lectus.</p>
       </div>
     </section>
   </div>
 
+  <div class="pane" style="background: #e8eaeb;">
+    <section class="row">
+      <div class="six columns">
+        <h3>Boeing</h3>
+      </div>
+      <div class="six columns">
+        <img class="valign-img-bottom" src="img/phone.jpg">
+      </div>
+    </section>
+  </div>
+
+  <div class="pane">
+    <section class="row">
+      <div class="six columns">
+      </div>
+      <div class="six columns">
+        <h3>Something Else</h3>
+      </div>
+    </section>
+  </div>
 
 	<!-- Grab Google CDN's jQuery, fall back to local if offline -->
 	<!-- 2.0 for modern browsers, 1.10 for .oldie -->
@@ -103,7 +136,7 @@ Morbi est metus, tempor sed enim id, pretium faucibus felis. Suspendisse vitae c
 	<!--
 	Include gumby.js followed by UI modules followed by gumby.init.js
 	Or concatenate and minify into a single file -->
-	<script gumby-touch="js/libs" src="bower_components/gumby/js/libs/gumby.js"></script>
+	<script gumby-touch="js/libs" gumby-debug gumby-init="false" src="bower_components/gumby/js/libs/gumby.js"></script>
 	<script src="bower_components/gumby/js/libs/ui/gumby.retina.js"></script>
 	<script src="bower_components/gumby/js/libs/ui/gumby.fixed.js"></script>
 	<script src="bower_components/gumby/js/libs/ui/gumby.skiplink.js"></script>
