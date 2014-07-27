@@ -3,11 +3,22 @@
 
 ;(function($) {
   $.fn.fullHeight = function() {
+    var window_width = $(window).width();
     var window_height = $(window).height();
-    var target_height = window_height - 100;
-    this.css({
-      "height": target_height + "px"
-    });
+    var target_height = window_height - 50;
+    var content_height = this.find(".contents").height();
+    var top_padding = (window_height - content_height) * .4;
+    if(window_width >= 768 && window_height >= 620) {
+      this.css({
+        "height": target_height + "px",
+        "padding-top": top_padding
+      });
+    } else {
+      this.css({
+        "height": "auto",
+        "padding-top": window_height * .10
+      });
+    }
     return this;
   };
 })(jQuery);

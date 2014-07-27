@@ -12,17 +12,31 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-$hero-font-color: white;
-
 .pane {
   width: 100%;
   min-height: 500px;
 }
+
+.circle {
+  border-radius: 100%;
+  border: 3px solid white;
+}
+
+.icon-link-block {
+  display: block;
+}
+
+/* Hero Unit */
+
+$hero-font-color: white;
+
 #hero {
 
   background: url(../img/books-large.jpg) no-repeat 50% 50%;
   background-size: cover;
   color: $hero-font-color;
+  position: relative;
+  margin-bottom: 50px;
 
   h1, h2, h3, h4, h5, h6 {
     color: $hero-font-color;
@@ -30,31 +44,44 @@ $hero-font-color: white;
   }
 
   h1 {
-    font-size: em(42px);
+    font-size: em(32px);
     text-transform: none;
     font-weight: 300;
   }
 
   h2 {
-    font-size: em(62px);
+    font-size: em(52px);
     text-transform: uppercase;
     font-weight: 400;
   }
 
-  .profile-image {
+  img.profile-image {
     margin-bottom: $med;
   }
 
   p {
     margin-top: $med;
+    padding-bottom: $xxxlarge;
   }
 
-  .contents {
-    padding-top: 5em;
+  .control {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: $xlarge;
   }
 
-}
-.circle {
-  border-radius: 100%;
-  border: 3px solid white;
+  .icon-link-block {
+    padding-bottom: $xlarge;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: white;
+  }
+
 }
