@@ -5,7 +5,7 @@
   $.fn.fullHeight = function() {
     var window_width = $(window).width();
     var window_height = $(window).height();
-    var target_height = window_height - 50;
+    var target_height = window_height - 70;
     var content_height = this.find(".contents").height();
     var top_padding = (window_height - content_height) * .4;
     if(window_width >= 768 && window_height >= 620) {

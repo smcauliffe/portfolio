@@ -38,6 +38,32 @@ h3 {
   margin-top: $med;
 }
 
+.navbar.fixed {
+  box-shadow: 0 2px 5px rgba(0,0,0,.25);
+}
+
+.target {
+  height: 5px;
+}
+
+.navbar {
+  font-family: $font-family-headers;
+  text-transform: uppercase;
+  font-weight: 400;
+  h1, h2, h3, h4, h5, h6 {
+    text-transform: none;
+    height: 60px;
+    line-height: 58px;
+    padding-top: 0;
+  }
+}
+
+.nav-branding {
+  display: block;
+  height: 60px;
+  line-height: 58px;
+}
+
 /* Hero Unit */
 
 $hero-font-color: white;
@@ -51,7 +77,6 @@ $hero-font-color: white;
 
   h1, h2, h3, h4, h5, h6 {
     color: $hero-font-color;
-    font-family: $font-family-headers;
   }
 
   h1 {

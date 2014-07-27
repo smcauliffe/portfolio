@@ -61,25 +61,29 @@ Morbi est metus, tempor sed enim id, pretium faucibus felis. Suspendisse vitae c
     </section>
     <div class="row control">
       <div class="centered twelve columns text-center">
-        <a href="#" class="icon-link-block">
+        <a href="#" gumby-goto="[data-target='main']" class="skip icon-link-block">
           <i class="icon-down-open"></i>
         </a>
       </div>
     </div>
   </div>
 
+  <div class="target" data-target="main"></div>
+
   <nav id="navbar_main" class="navbar" gumby-fixed="top">
     <div class="row">
       <a href="#" class="toggle" gumby-trigger="#navbar_main > div > ul"><i class="icon-menu"></i></a>
-      <h4 class="four columns">Sean McAuliffe</h4>
-      <ul class="eight columns text-right">
+      <div class="eight columns">
+        <a href="#" class="nav-branding"><h5>Sean McAuliffe</h5></a>
+      </div>
+      <ul class="four columns">
         <li><a href="#">Work</a></li>
         <li><a href="#">About</a></li>
       </ul>
     </div>
   </nav>
 
-  <div class="pane">
+  <div id="main_content" class="pane">
     <section class="row">
       <div class="six columns">
         <img class="valign-img-bottom" src="img/tac-in-monitor.png">

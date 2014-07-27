@@ -16,11 +16,11 @@ Gumby.ready(function() {
 	});
 
   $('#hero').fullHeight();
-  Gumby.initialize('fixed', true);
+  Gumby.initialize(['skiplink','fixed'], true);
 
   $(window).resize(function() {
     $('#hero').fullHeight();
-    Gumby.initialize('fixed', true);
+    Gumby.initialize(['skiplink','fixed'], true);
   });
 
   $('.display').addClass('ready');

@@ -1701,9 +1701,18 @@ p { margin-top: 26px; }
 
 h3 { margin-top: 18px; }
 
+.navbar.fixed { box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); }
+
+.target { height: 5px; }
+
+.navbar { font-family: "Lato"; text-transform: uppercase; font-weight: 400; }
+.navbar h1, .navbar h2, .navbar h3, .navbar h4, .navbar h5, .navbar h6 { text-transform: none; height: 60px; line-height: 58px; padding-top: 0; }
+
+.nav-branding { display: block; height: 60px; line-height: 58px; }
+
 /* Hero Unit */
 #hero { background: url(../img/books-large.jpg) no-repeat 50% 50%; background-size: cover; color: white; position: relative; }
-#hero h1, #hero h2, #hero h3, #hero h4, #hero h5, #hero h6 { color: white; font-family: "Lato"; }
+#hero h1, #hero h2, #hero h3, #hero h4, #hero h5, #hero h6 { color: white; }
 #hero h1 { font-size: 2em; text-transform: none; font-weight: 300; }
 #hero h2 { font-size: 3.25em; text-transform: uppercase; font-weight: 400; }
 #hero img.profile-image { margin-bottom: 18px; }
