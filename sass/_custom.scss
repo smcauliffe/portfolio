@@ -72,6 +72,10 @@ h3 {
   line-height: 58px;
 }
 
+.navbar ul li {
+  text-align: right;
+}
+
 .work-front {
   padding-top: 2em;
 }
@@ -169,4 +173,12 @@ footer {
     color: white;
   }
 
+}
+
+.thumbnails div {
+  margin-bottom: 2em;
+}
+
+.video-js {
+  margin-top: 2em;
 }
