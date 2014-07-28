@@ -32,7 +32,7 @@
       position: absolute;
       text-align: center;
       display: inline-block;
-      color: $navbar-link-color;
+      color: $body-link-color;
       background: $navbar-color;
       @include line-and-height(40px);
       @include border-radius($button-radius);
@@ -128,9 +128,7 @@
       display: block;
       padding: 0 ms(0);
       white-space: nowrap;
-      color: $navbar-link-color;
-      text-shadow: 0 1px 2px darken($navbar-color, 20%),
-                   0 1px 0 darken($navbar-color, 20%);
+      color: $body-link-color;
       @include line-and-height(height-calc($larger - 3));
       @include font-size($norm);
       i.icon-popup {
@@ -188,7 +186,7 @@
           a {
             color: $white;
             border-bottom: 1px solid darken($navbar-color, 10%);
-            &:hover {color: $body-link-color;}
+            &:hover {color: $black;}
           }
         }
       }
@@ -297,7 +295,7 @@
         a {
           color: $white;
           border-bottom: 1px solid darken($navbar-color, 10%);
-          &:hover {color: $body-link-color;}
+          &:hover {color: $black;}
         }
       }
     }
@@ -343,7 +341,6 @@
 .gumby-no-touch .navbar ul li:hover > a,
 .gumby-touch .navbar ul li.active > a {
   position: relative;
-  background: $info-hover-color;
   z-index: 1000;
 }
 
@@ -375,7 +372,7 @@
       a {
         color: $white;
         border-bottom: 1px solid darken($navbar-color, 10%);
-        &:hover {color: $body-link-color;}
+        &:hover {color: $black;}
       }
     }
   }
@@ -404,7 +401,7 @@
 }
 
 .gumby-touch .navbar a:hover {
-  color: $navbar-link-color !important;
+  color: $black !important;
 }
 
 .subnav {

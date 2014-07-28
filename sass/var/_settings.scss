@@ -72,8 +72,8 @@ $header-font-color: #444444 !default;
 $header-link-color: #d04526 !default;
 $header-link-hover-color: #c03d20 !default;
 $body-font-color: #555555 !default;
-$body-link-color: #d04526 !default;
-$body-link-hover-color: #c03d20 !default;
+$body-link-color: #6a99bb !default;
+$body-link-hover-color: black !default;
 
 // User Interface Colors
 $global-bg-color: #fff;
@@ -131,7 +131,7 @@ $form-select-color: #555;
 $tab-height: 42px;
 
 // Navigation
-$navcontain-height: 50px; // makes space at the top of a document for when using a fixed nav
+$navcontain-height: 70px; // makes space at the top of a document for when using a fixed nav
 
 // Drawers & Modals
 $modal-overlay-color: rgba(0, 0, 0, 0.8);

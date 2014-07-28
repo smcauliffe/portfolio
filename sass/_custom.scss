@@ -1,3 +1,8 @@
+a {
+  transition: all .25s ease;
+  cursor: pointer;
+}
+
 .display {
   visibility: hidden;
 }
@@ -55,6 +60,10 @@ h3 {
     line-height: 58px;
     padding-top: 0;
   }
+}
+
+.navbar a:hover {
+  color: black !important;
 }
 
 .nav-branding {
@@ -131,5 +140,33 @@ $hero-font-color: white;
 }
 
 footer {
-  min-height: 300px;
+  padding: 3em 0;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $hero-font-color;
+    display: inline;
+    line-height: 1;
+  }
+
+  h1 {
+    font-size: em(22px);
+    text-transform: none;
+    font-weight: 300;
+    padding-right: 1em;
+  }
+
+  h2 {
+    font-size: em(22px);
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: white;
+  }
+
 }
