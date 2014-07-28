@@ -1689,7 +1689,7 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 h1, h2, h3, h4, h5, h6 { font-family: "Lato"; text-transform: uppercase; font-weight: 400; }
 
-.pane { width: 100%; min-height: 300px; }
+.pane { width: 100%; }
 
 .circle { border-radius: 100%; border: 3px solid white; }
 
@@ -1701,7 +1701,7 @@ p { margin-top: 26px; }
 
 h3 { margin-top: 18px; }
 
-.navbar.fixed { box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); }
+.navbar { box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); }
 
 .target { height: 5px; }
 
@@ -1709,6 +1709,8 @@ h3 { margin-top: 18px; }
 .navbar h1, .navbar h2, .navbar h3, .navbar h4, .navbar h5, .navbar h6 { text-transform: none; height: 60px; line-height: 58px; padding-top: 0; }
 
 .nav-branding { display: block; height: 60px; line-height: 58px; }
+
+.work-front { padding-top: 2em; }
 
 /* Hero Unit */
 #hero { background: url(../img/books-large.jpg) no-repeat 50% 50%; background-size: cover; color: white; position: relative; }
@@ -1721,3 +1723,7 @@ h3 { margin-top: 18px; }
 #hero .icon-link-block { padding-bottom: 42px; }
 #hero a { color: white; }
 #hero a:hover { color: white; }
+
+.footer-pane { margin-top: 42px; background: #151f26; }
+
+footer { min-height: 300px; }

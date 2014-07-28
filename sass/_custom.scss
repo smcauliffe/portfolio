@@ -14,7 +14,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .pane {
   width: 100%;
-  min-height: 300px;
 }
 
 .circle {
@@ -38,7 +37,7 @@ h3 {
   margin-top: $med;
 }
 
-.navbar.fixed {
+.navbar {
   box-shadow: 0 2px 5px rgba(0,0,0,.25);
 }
 
@@ -62,6 +61,10 @@ h3 {
   display: block;
   height: 60px;
   line-height: 58px;
+}
+
+.work-front {
+  padding-top: 2em;
 }
 
 /* Hero Unit */
@@ -120,4 +123,13 @@ $hero-font-color: white;
     color: white;
   }
 
+}
+
+.footer-pane {
+  margin-top: $xlarge;
+  background: #151f26;
+}
+
+footer {
+  min-height: 300px;
 }
