@@ -90,6 +90,7 @@ $hero-font-color: white;
   background-size: cover;
   color: $hero-font-color;
   position: relative;
+  padding-bottom: $xxxlarge;
 
   h1, h2, h3, h4, h5, h6 {
     color: $hero-font-color;
@@ -107,13 +108,26 @@ $hero-font-color: white;
     font-weight: 400;
   }
 
+  @media (max-width: $tablet-device-width) {
+    h2 {
+      font-size: em(32px);
+    }
+  }
+
   img.profile-image {
+    max-width: 20%;
     margin-bottom: $med;
+  }
+
+  @media (max-width: $tablet-device-width) {
+    img.profile-image {
+      max-width: 40%;
+    }
   }
 
   p {
     margin-top: $med;
-    padding-bottom: $xxxlarge;
+    @include hidden(all-phones);
   }
 
   .control {

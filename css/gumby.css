@@ -1719,12 +1719,15 @@ h3 { margin-top: 18px; }
 .work-front { padding-top: 2em; }
 
 /* Hero Unit */
-#hero { background: url(../img/books-large.jpg) no-repeat 50% 50%; background-size: cover; color: white; position: relative; }
+#hero { background: url(../img/books-large.jpg) no-repeat 50% 50%; background-size: cover; color: white; position: relative; padding-bottom: 68px; }
 #hero h1, #hero h2, #hero h3, #hero h4, #hero h5, #hero h6 { color: white; }
 #hero h1 { font-size: 2em; text-transform: none; font-weight: 300; }
 #hero h2 { font-size: 3.25em; text-transform: uppercase; font-weight: 400; }
-#hero img.profile-image { margin-bottom: 18px; }
-#hero p { margin-top: 18px; padding-bottom: 68px; }
+@media (max-width: 768px) { #hero h2 { font-size: 2em; } }
+#hero img.profile-image { max-width: 20%; margin-bottom: 18px; }
+@media (max-width: 768px) { #hero img.profile-image { max-width: 40%; } }
+#hero p { margin-top: 18px; }
+@media only screen and (max-width: 767px) { #hero p { display: none !important; } }
 #hero .control { position: absolute; bottom: 0; left: 0; right: 0; font-size: 42px; }
 #hero .icon-link-block { padding-bottom: 42px; }
 #hero a { color: white; }
